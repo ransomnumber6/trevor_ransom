@@ -20,8 +20,8 @@
 /*  Basic Style 
 /* =================================== */
 body {
-  background: #dad7cf;
-  color: #535b61;
+  background: #fff;
+  color: #D02727;
   font-family: "Poppins", sans-serif;
   font-size: 14px;
   line-height: 22px;
@@ -43,7 +43,7 @@ img {
 }
 
 a, a:focus {
-  color: #3f6161;
+  color: #D02727;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
