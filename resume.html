@@ -4,166 +4,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Web Fonts
-======================= -->
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900' type='text/css'>
-
-<!-- Stylesheet
-======================= -->
-<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="vendor/font-awesome/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <title>Trevor Ransom - Resume</title>
-    <style>
-    body {
-            font-family: 'Arial', sans-serif;
-            color: #333;
-            margin: 0;
-            overflow: hidden;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        main {
-            max-width: 800px;
-            width: 100%;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            background: rgba(255, 255, 255, 0.9);
-        }
-
-        header {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        h1 {
-            color: #D02727;
-            margin-bottom: 5px;
-        }
-
-        h2 {
-            color: #D02727;
-            margin-bottom: 20px;
-        }
-
-        h3 {
-            color: #D02727;
-        }
-
-        .section {
-            margin-bottom: 20px;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .section:before {
-            content: "";
-            position: absolute;
-            top: 50%;
-            left: 0;
-            width: 100%;
-            height: 1px;
-            background: #D02727;
-            transform: translateY(-50%);
-            z-index: -1;
-        }
-
-        .experience-item {
-            margin-bottom: 15px;
-        }
-
-        video {
-            position: fixed;
-            z-index: -1;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-    </style>
 </head>
 
 <body>
-
-    <video autoplay muted loop>
+     <video autoplay muted loop>
         <!-- Provide a valid video URL here -->
         <source src="network.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
+    <div class="container mt-4">
 
-    <main>
-
-        <header>
-            <h1>Trevor Ransom</h1>
-            <h2>Computer Science Major</h2>
-        </header>
-
-        <section class="section">
-            <h2>Education</h2>
-            <p><strong>Bachelor of Science in Computer Science (Cyber Security)</strong><br>
-                Arizona State University, Tempe<br>
-                GRADUATING, FALL 2023<br>
-                GPA: 3.47<br>
-                Deans List: SPRING 2022 AND SPRING 2023
-            </p>
-        </section>
-
-        <section class="section">
-            <h2>Skills</h2>
-            <p><strong>Languages:</strong> Python, C, C++, Bash, Java, YAML, MIPS Assembly<br>
-                <strong>Certifications:</strong> TestOut Network Pro (C4249)<br>
-                <strong>Database:</strong> MySQL, SQLite, SQLAlchemy<br>
-                <strong>Technologies:</strong> Kubernetes, K9S, Docker, Docker Compose, Ansible, Packer, Atlassian Suite (Jira, Confluence, VSphere), Git<br>
-                <strong>CI/CD:</strong> GitLab Pipelines<br>
-                <strong>Agile Methodologies:</strong> Scrum, Agile frameworks
-            </p>
-        </section>
-
-        <section class="section">
-            <h2>Experience</h2>
-
-            <div class="experience-item">
-                <h3>Northrop Grumman, Chandler, AZ</h3>
-                <p><strong>SITE RELIABILITY ENGINEER</strong><br>
-                    Jun 2022 - Present<br>
-                    • Developed CI/CD Pipeline which automates the full deployment of a Kubernetes cluster<br>
-                    • Demonstrated automated deployment of Bigbang within a Kubernetes cluster to primary project stakeholder Missile Defense Agency<br>
-                    • Assisted in the development of a new Software Factory building tools for system security and vulnerability checking<br>
-                    <!-- Add more points as needed -->
-                </p>
+        <div class="card mt-4">
+            <div class="card-header">
+                <h5 class="m-0"><span class="text-muted mr-2"><i class="fa fa-plane"></i></span>Education</h5>
             </div>
-
-            <div class="experience-item">
-                <h3>Verizon Wireless, Glendale, AZ</h3>
-                <p><strong>BUSINESS SPECIALIST</strong><br>
-                    Feb 2019 - Aug 2020<br>
-                    • Supported regional and local sales managers and their staff<br>
-                    <!-- Add more points as needed -->
-                </p>
+            <div class="card-body">
+                <div class="row mt-n3">
+                    <div class="col-sm-4 mt-3">
+                        <span>Degree:</span>
+                        <p id="Degree" class="font-weight-600 mb-0">Bachelor of Science in Computer Science (Cyber Security)</p>
+                    </div>
+                    <div class="col-sm-4 mt-3">
+                        <span>School:</span>
+                        <p id="School" class="font-weight-600 mb-0">Arizona State University, Tempe</p>
+                    </div>
+                    <div class="col-sm-4 mt-3">
+                        <span>Graduation:</span>
+                        <p id="Graduation" class="font-weight-600 mb-0">Fall 2023</p>
+                    </div>
+                    <div class="col-sm-4 mt-3">
+                        <span>GPA:</span>
+                        <p id="GPA" class="font-weight-600 mb-0">3.47</p>
+                    </div>
+                    <div class="col-sm-4 mt-3">
+                        <span>Dean's List:</span>
+                        <p id="DeansList" class="font-weight-600 mb-0">Spring 2022 and Spring 2023</p>
+                    </div>
+                </div>
             </div>
+        </div>
 
-            <div class="experience-item">
-                <h3>Verizon Wireless, Glendale, AZ</h3>
-                <p><strong>SOLUTIONS SPECIALIST</strong><br>
-                    Jan 2017 - Feb 2019<br>
-                    <!-- Add more points as needed -->
-                </p>
+        <div class="card mt-4">
+            <div class="card-header">
+                <h5 class="m-0"><span class="text-muted mr-2"><i class="fa fa-plane"></i></span>Skills</h5>
             </div>
-
-            <div class="experience-item">
-                <h3>Papa Murphy’s, Prescott, AZ</h3>
-                <p><strong>GENERAL MANAGER</strong><br>
-                    Jun 2014 - Jan 2017<br>
-                    <!-- Add more points as needed -->
-                </p>
+            <div class="card-body">
+                <div class="row mt-n3">
+                    <div class="col-sm-4 mt-3">
+                        <span>Languages:</span>
+                        <p id="Languages" class="font-weight-600 mb-0">Python, C, C++, Bash, Java, YAML, MIPS Assembly</p>
+                    </div>
+                    <div class="col-sm-4 mt-3">
+                        <span>Certifications:</span>
+                        <p id="Certifications" class="font-weight-600 mb-0">TestOut Network Pro (C4249)</p>
+                    </div>
+                    <div class="col-sm-4 mt-3">
+                        <span>Database:</span>
+                        <p id="Database" class="font-weight-600 mb-0">MySQL, SQLite, SQLAlchemy</p>
+                    </div>
+                    <div class="col-sm-4 mt-3">
+                        <span>Technologies:</span>
+                        <p id="Technologies" class="font-weight-600 mb-0">Kubernetes, K9S, Docker, Docker Compose, Ansible, Packer, Atlassian Suite (Jira, Confluence, VSphere), Git</p>
+                    </div>
+                    <div class="col-sm-4 mt-3">
+                        <span>CI/CD:</span>
+                        <p id="CI_CD" class="font-weight-600 mb-0">GitLab Pipelines</p>
+                    </div>
+                    <div class="col-sm-4 mt-3">
+                        <span>Agile Methodologies:</span>
+                        <p id="Agile" class="font-weight-600 mb-0">Scrum, Agile frameworks</p>
+                    </div>
+                </div>
             </div>
+        </div>
 
-        </section>
+        <div class="card mt-4">
+            <div class="card-header">
+                <h5 class="m-0"><span class="text-muted mr-2"><i class="fa fa-plane"></i></span>Experience</h5>
+            </div>
+            <div class="card-body">
 
-    </main>
+                <div class="row mt-n3">
+                    <div class="col-sm-4 mt-3">
+                        <span>Company:</span>
+                        <p id="Company1" class="font-weight-600 mb-0">Northrop Grumman, Chandler, AZ</p>
+                    </div>
+                    <div class="col-sm-4 mt-3">
+                        <span>Position:</span>
+                        <p id="Position1" class="font-weight-600 mb-0">Site Reliability Engineer</p>
+                    </div>
+                    <div class="col-sm-4 mt-3">
+                        <span>Duration:</span>
+                        <p id="Duration1" class="font-weight-600 mb-0">Jun 2022 - Present</p>
+                    </div>
+                    <div class="col-sm-4 mt-3">
+                        <span>Responsibilities:</span>
+                        <p id="Responsibilities1" class="font-weight-600 mb-0">
+                            • Developed CI/CD Pipeline which automates the full deployment of a Kubernetes cluster<br>
+                            • Demonstrated automated deployment of Bigbang within a Kubernetes cluster to primary project stakeholder Missile Defense Agency<br>
+                            • Assisted in the development of a new Software Factory building tools for system security and vulnerability checking<br>
+                            <!-- Add more responsibilities as needed -->
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Repeat the structure for other experiences -->
+
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 </body>
 
