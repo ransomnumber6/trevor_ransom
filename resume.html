@@ -6,10 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <title>Trevor Ransom - Resume</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        video {
+            position: fixed;
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .container {
+            position: relative;
+            z-index: 1;
+        }
+    </style>
 </head>
 
 <body>
-     <video autoplay muted loop>
+    <video autoplay muted loop>
         <!-- Provide a valid video URL here -->
         <source src="network.mp4" type="video/mp4">
         Your browser does not support the video tag.
